@@ -1,7 +1,9 @@
 # How to run
 
 `cd todo-app`
+
 `npm install`
+
 `ng serve`
 
 # TodoApp
