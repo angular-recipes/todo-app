@@ -1,0 +1,15 @@
+<h1>Todo List</h1>
+<div>
+  <input type="text" #newTodo/>
+  <button (click)="add(newTodo.value);newTodo.value='';">add</button>   
+</div>
+<hr/>
+<table>
+  <tr *ngFor="let todo of todos">
+    <td>{{todo.id}}#</td>
+    <td>{{todo.label}}</td>
+    <td>{{todo.done ? '&#10003;' : '&#10005;'}}</td>
+    <td><button (click)="delete(todo)">delete</button></td>
+    <td><button (click)="toggle(todo)">toggle</button></td>
+  </tr>
+</table>
